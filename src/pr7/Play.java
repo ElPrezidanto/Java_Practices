@@ -107,7 +107,4 @@ public class Play extends JFrame {
             }
         });
     }
-    public void test(){
-        System.out.println("hello");
-    }
 }
