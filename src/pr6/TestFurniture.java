@@ -51,8 +51,7 @@ public class TestFurniture {
                             break;
                         default:
                             System.out.println("Такого товара нет.");
-                            System.out.println();
-                            System.out.println();
+                            System.out.println("Такого товар.");
                             break;
                     }
                     break;
