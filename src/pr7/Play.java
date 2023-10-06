@@ -13,14 +13,15 @@ public class Play extends JFrame {
     JLabel result = new JLabel("Result: 0 X 0");
     JLabel last_scorer = new JLabel("Last Scorer: N/A");
     JLabel winner = new JLabel("Winner: DRAW");
-    Font fnt = new Font("Times new roman",Font.BOLD,20);
+    Font fnt = new Font("Times new roman", Font.BOLD, 20);
     int real_madrid_scores = 0;
     int milan_scores = 0;
     JPanel[] pnl = new JPanel[9];
-    Play(){
+
+    Play() {
         super("Soccer");
         setLayout(new FlowLayout());
-        for(int i = 0; i < pnl.length; i++){
+        for (int i = 0; i < pnl.length; i++) {
             pnl[i] = new JPanel();
             add(pnl[i]);
         }
@@ -36,13 +37,11 @@ public class Play extends JFrame {
                 milan_scores = milan_scores + 1;
                 result.setText("Result: " + milan_scores + " X " + real_madrid_scores);
                 last_scorer.setText("Last Scorer: Milan");
-                if(milan_scores > real_madrid_scores){
+                if (milan_scores > real_madrid_scores) {
                     winner.setText("Winner: Milan");
-                }
-                else if (real_madrid_scores > milan_scores){
+                } else if (real_madrid_scores > milan_scores) {
                     winner.setText("Winner: Real Madrid");
-                }
-                else{
+                } else {
                     winner.setText("Winner: DRAW");
                 }
             }
@@ -53,18 +52,16 @@ public class Play extends JFrame {
                 real_madrid_scores = real_madrid_scores + 1;
                 result.setText("Result: " + milan_scores + " X " + real_madrid_scores);
                 last_scorer.setText("Last Scorer: Real Madrid");
-                if(milan_scores > real_madrid_scores){
+                if (milan_scores > real_madrid_scores) {
                     winner.setText("Winner: Milan");
-                }
-                else if (real_madrid_scores > milan_scores){
+                } else if (real_madrid_scores > milan_scores) {
                     winner.setText("Winner: Real Madrid");
-                }
-                else{
+                } else {
                     winner.setText("Winner: DRAW");
                 }
             }
         });
-        setSize(400,300);
+        setSize(400, 300);
     }
 
     public static void main(String[] args) {
