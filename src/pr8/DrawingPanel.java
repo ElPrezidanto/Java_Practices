@@ -22,7 +22,7 @@ class DrawingPanel extends JPanel {
 
     public static void main(String[] args) {
         // Создание окна с 20 случайными фигурами
-        java.util.List<Shape> shapes = generateRandomShapes(20);
+        java.util.List<Shape> shapes = generateRandomShapes(5);
         JFrame frame1 = new JFrame("Random Shapes");
         frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame1.setSize(400, 400);
