@@ -53,8 +53,17 @@ class Recursion {
 
     public static void main(String[] args) {
         Recursion t = new Recursion();
-        t.triangle(6, 1);
-        t.naturals(6, 1);
-        t.segment(4, 6, -1);
+        Scanner inp = new Scanner(System.in);
+        int num, num2;
+        System.out.print("Введите число: ");
+        num = inp.nextInt();
+        t.triangle(num, 1);
+        System.out.print("Введите число: ");
+        num = inp.nextInt();
+        t.naturals(num, 1);
+        System.out.print("Введите числа a и b: ");
+        num = inp.nextInt();
+        num2 = inp.nextInt();
+        t.segment(num, num2, -1);
     }
 }
