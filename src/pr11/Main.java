@@ -50,7 +50,5 @@ public class Main {
             if (num == 2) num2();
             if (num == 3) num3();
         } while (num != 0);
-
-
     }
 }

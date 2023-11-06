@@ -64,7 +64,7 @@ public class FileReadWriteExample {
     }
 
     public static void appendToFile(String fileName) {
-        try (FileWriter writer = new FileWriter(fileName, false)) {
+        try (FileWriter writer = new FileWriter(fileName, true)) {
             System.out.println("\nВведите текст для записи в файл(для завершения ввода введите '0'):");
             Scanner inp = new Scanner(System.in);
             String text;

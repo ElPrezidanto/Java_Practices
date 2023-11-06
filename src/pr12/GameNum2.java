@@ -37,9 +37,6 @@ public class GameNum2 {
     }
 
     public void start() {
-        System.out.println("Start game");
-        System.out.println(getNames()[0] + " " + getColoda1());
-        System.out.println(getNames()[1] + " " + getColoda2());
         setRound(0);
         int val1, val2, temp;
         while (!getColoda1().isEmpty() && !getColoda2().isEmpty() && getRound() < 106) {
@@ -75,9 +72,9 @@ public class GameNum2 {
                 coloda1.removeIndex(0);
             } else break;
         }
-        if (getColoda2().isEmpty()) System.out.println("Winner is" + getNames()[0] + ": " + getRound() + " Rounds");
-        if (getColoda1().isEmpty()) System.out.println("Winner is" + getNames()[1] + ": " + getRound() + " Rounds");
-        if (getRound() == 106) System.out.println("draw");
+        if (getColoda2().isEmpty()) System.out.println("Winner is " + getNames()[0] + ": " + getRound() + " Rounds");
+        if (getColoda1().isEmpty()) System.out.println("Winner is " + getNames()[1] + ": " + getRound() + " Rounds");
+        if (getRound() == 106) System.out.println("BOTVA");
     }
 
     public int getRound() {
