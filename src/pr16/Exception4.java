@@ -10,7 +10,7 @@ public class Exception4 {
             String intString = myScanner.next();
             int i = Integer.parseInt(intString);
             System.out.println(2 / i);
-        } catch (NumberFormatException e) {
+        } catch (Exception e) {
             System.out.println(e.toString());
         } finally {
             System.out.println("finaly");

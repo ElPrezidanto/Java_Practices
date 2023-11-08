@@ -14,5 +14,4 @@ public class Exception2 {
             System.out.println(e.toString());
         }
     }
-
 }

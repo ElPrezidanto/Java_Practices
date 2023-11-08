@@ -10,6 +10,6 @@ public class ThrowsDemo {
         if (key == null) {
             throw new NullPointerException("null key in getDetails");
         }
-        return "data for" + key;
+        return "data for " + key;
     }
 }

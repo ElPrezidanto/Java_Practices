@@ -4,7 +4,6 @@ import java.util.Collection;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("This is student work number14 by Trofim Postnikov IKBO-31-22!");
         System.out.println("Bounded test");
         BoundedWaitList<Integer> arr1 = new BoundedWaitList<Integer>(2);
         arr1.add(1);

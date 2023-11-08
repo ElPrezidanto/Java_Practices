@@ -25,13 +25,13 @@ public class Main {
 
     private static void num5() {
         ThrowsDemo e = new ThrowsDemo();
-        e.printMessage("hi"); // replace const to null
+        e.printMessage(null); // replace const to null
     }
 
     private static void num6() {
         ThrowsDemo e = new ThrowsDemo();
         try {
-            e.printMessage(null); // replace const to null
+            e.printMessage("hi"); // replace const to null
         } catch (NullPointerException err) {
             System.out.println(err.toString());
         }
@@ -39,7 +39,7 @@ public class Main {
 
     private static void num7() {
         ThrowsDemo2 e = new ThrowsDemo2();
-        e.printDetails("hi");
+        e.printDetails("");
     }
 
     private static void num8() {
