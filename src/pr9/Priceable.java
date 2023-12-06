@@ -30,7 +30,7 @@ class Keyboard implements Priceable {
     }
 }
 
-class main {
+class Mains {
     public static void main(String[] args) {
         Camera c = new Camera(5000);
         Keyboard k = new Keyboard(6990);

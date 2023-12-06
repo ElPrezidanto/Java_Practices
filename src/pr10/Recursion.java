@@ -7,15 +7,20 @@ class Recursion {
     Recursion() {
     }
 
-    void triangle(int k, int currentK) {
+    void triangle(int k, int currentK, int cnt) {
         if (currentK > k || k < 1) {
-            System.out.print("\n");
+            System.out.println();
             return;
         }
         for (int i = 1; i <= currentK; i++) {
+            if (cnt > k){
+                System.out.println();
+                return;
+            }
             System.out.print(currentK + " ");
+            cnt+=1;
         }
-        triangle(k, currentK + 1);
+        triangle(k, currentK + 1, cnt);
 
     }
 
@@ -57,7 +62,7 @@ class Recursion {
         int num, num2;
         System.out.print("Введите число: ");
         num = inp.nextInt();
-        t.triangle(num, 1);
+        t.triangle(num, 1, 1);
         System.out.print("Введите число: ");
         num = inp.nextInt();
         t.naturals(num, 1);

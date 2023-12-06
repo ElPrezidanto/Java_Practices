@@ -46,7 +46,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int num = -1;
         do {
-            System.out.print("Number (0 exit) -> ");
+            System.out.print("Number:\n1. stack\n2. DoubleList\n3. DequeList\n0. exit -> ");
             num = sc.nextInt();
             if (num == 1) num1();
             if (num == 2) num2();

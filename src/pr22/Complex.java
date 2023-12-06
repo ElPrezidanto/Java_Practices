@@ -17,8 +17,8 @@ public class Complex {
     @Override
     public String toString() {
         return "\nComplex{" +
-                "real=" + real +
-                ", image=" + image +
+                real + " + " +
+                 image +"i"  +
                 "}\n";
     }
 }
