@@ -3,15 +3,6 @@ package pr17;
 import java.util.Scanner;
 
 public class Main {
-    private static boolean in(char l, char[] list) {
-        for (int i = 0; i < list.length; i++) {
-            if (l == list[i]) {
-                return true;
-            }
-        }
-        return false;
-    }
-
     private static void num2() {
         LabClassUI lab = new LabClassUI();
         lab.start();

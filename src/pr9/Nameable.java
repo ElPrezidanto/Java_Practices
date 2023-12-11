@@ -30,7 +30,7 @@ class Planet implements Nameable {
     }
 }
 
-class mains {
+class Main {
     public static void main(String[] args) {
         Human h = new Human("Anton");
         Planet p = new Planet("Mars");

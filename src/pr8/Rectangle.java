@@ -1,8 +1,6 @@
 package pr8;
-
-import javax.swing.*;
 import java.awt.*;
-import java.util.Random;
+
 
 class Rectangle extends Shape {
     private int width;

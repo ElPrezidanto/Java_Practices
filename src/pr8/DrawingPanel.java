@@ -78,8 +78,7 @@ class DrawingPanel extends JPanel {
         private int currentFrameIndex;
 
         public AnimationPanel() {
-            frames = new ImageIcon[3]; // Assuming there are 3 frames
-            // Load frames from files or resources
+            frames = new ImageIcon[3];
             frames[0] = new ImageIcon("C:\\Users\\enrik\\Downloads\\frame1.png");
             frames[1] = new ImageIcon("C:\\Users\\enrik\\Downloads\\frame2.png");
             frames[2] = new ImageIcon("C:\\Users\\enrik\\Downloads\\frame3.png");
@@ -87,7 +86,7 @@ class DrawingPanel extends JPanel {
             currentFrameIndex = 0;
 
             // Set up a timer to switch frames every 200 milliseconds
-            Timer timer = new Timer(200, e -> {
+            Timer timer = new Timer(1000, e -> {
                 currentFrameIndex = (currentFrameIndex + 1) % frames.length;
                 repaint();
             });

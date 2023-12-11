@@ -9,7 +9,7 @@ public class MVCPatternDemo {
         view.printStudentsDetails();
         System.out.println("After update");
         controller.setStudentName("StudNew");
-        controller.setStudentRollNo("01");
+        controller.setStudentRollNo("02");
         controller.updateView();
         view.printStudentsDetails();
     }

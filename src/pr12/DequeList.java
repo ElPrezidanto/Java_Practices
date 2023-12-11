@@ -159,8 +159,7 @@ public class DequeList implements Deque<Integer> {
     }
 
     @Override
-    public int size() {
-        return list.size();
+    public int size() {return list.size();
     }
 
     @Override

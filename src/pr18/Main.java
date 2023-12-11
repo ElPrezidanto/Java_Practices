@@ -28,16 +28,17 @@ public class Main {
 
     private static void num3() {
         System.out.println(Calculate.sum(1, 3.0));
-        System.out.println(Calculate.divide(2, 1.0));
-        System.out.println(Calculate.divide(2, 0.0));
-        System.out.println(Calculate.divide(2, 1.0));
-        System.out.println(Calculate.multiply(2.0, 1));
-        System.out.println(Calculate.multiply(1, 2.0));
-        System.out.println(Calculate.subtraction(1.0, 0));
+        System.out.println(Calculate.multiply(2, 1.0));
+        System.out.println(Calculate.multiply(2, 0.0));
+        System.out.println(Calculate.multiply(2, 1.0));
+        System.out.println(Calculate.subtraction(2.0, 1));
+        System.out.println(Calculate.subtraction(1, 2.0));
+        System.out.println(Calculate.divide(1.0, 0));
     }
 
     private static void num4() {
         Matrix obj = new Matrix(3, 3);
+        int[][] matr2 = new int[][]{{0, 0, 0}, {0, 0, 0}, {1, 1, 1}};
         int[][] matr = new int[3][3];
         matr[0] = new int[]{1, 1, 1};
         matr[1] = new int[]{1, 1, 1};
@@ -45,8 +46,22 @@ public class Main {
         obj.setArr(matr);
         System.out.println("Size of matrix is 2x2?: " + obj.checkSize(2, 2));
         System.out.println("Size of matrix is 3x3?: " + obj.checkSize(3, 3));
-        int[][] arr = obj.getRes(new int[][]{{0, 0, 0}, {0, 0, 0}, {1, 1, 1}}, 3, 3);
-        System.out.println("Matrix:");
+        int[][] arr = obj.getRes(matr2, 3, 3);
+        System.out.println("Matrix 1:");
+        for (int i = 0; i < matr.length; i++) {
+            for (int j = 0; j < matr[i].length; j++) {
+                System.out.print(" " + matr[i][j]);
+            }
+            System.out.print("\n");
+        }
+        System.out.println("Matrix 2:");
+        for (int i = 0; i < matr2.length; i++) {
+            for (int j = 0; j < matr2[i].length; j++) {
+                System.out.print(" " + matr2[i][j]);
+            }
+            System.out.print("\n");
+        }
+        System.out.println("Matrix 1 + Matrix 2:");
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 System.out.print(" " + arr[i][j]);
