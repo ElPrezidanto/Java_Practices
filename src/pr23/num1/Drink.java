@@ -1,6 +1,6 @@
-package pr23;
+package pr23.num1;
 
-public final class Drink implements Item {
+public final class Drink {
     private final double cost;
     private final String name;
     private final String description;
@@ -17,19 +17,15 @@ public final class Drink implements Item {
         this.description = description;
     }
 
-    @Override
     public double getCost() {
         return cost;
     }
 
-    @Override
     public String getName() {
         return name;
     }
 
-    @Override
     public String getDescription() {
         return description;
     }
 }
-

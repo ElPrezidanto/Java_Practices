@@ -1,8 +1,9 @@
-package pr23;
+package pr23.num3;
 
+import pr23.num2.Item;
 import java.util.LinkedList;
 
-public class InternetOrder {
+class InternetOrder {
     private LinkedList<Item> orderList;
 
     public InternetOrder() {
@@ -31,7 +32,6 @@ public class InternetOrder {
         }
         return removed;
     }
-
     public int removePositionsByName(String name) {
         int removedCount = 0;
         for (int i = orderList.size() - 1; i >= 0; i--) {
@@ -63,5 +63,29 @@ public class InternetOrder {
         return totalCost;
     }
 
+    public int getPositionCountByName(String name) {
+        int count = 0;
+        for (Item item : orderList) {
+            if (item.getName().equals(name)) {
+                count++;
+            }
+        }
+        return count;
+    }
 
+    public String[] getOrderedItemNames() {
+        LinkedList<String> itemNames = new LinkedList<>();
+        for (Item item : orderList) {
+            if (!itemNames.contains(item.getName())) {
+                itemNames.add(item.getName());
+            }
+        }
+        return itemNames.toArray(new String[0]);
+    }
+
+    public Item[] getSortedItemsByPrice() {
+        orderList.sort((item1, item2) -> Double.compare(item2.getCost(), item1.getCost()));
+        return getOrderedItems();
+    }
 }
+

@@ -1,12 +1,12 @@
-package pr23;
+package pr23.num3;
 
 import java.util.Arrays;
 
 public class Test {
     public static void main(String[] args) {
-        Dish dish1 = new Dish(20.0, "Лучшая кола", "Cool-cola");
-        Dish dish2 = new Dish(52.812, "Колбаски барбекю", "очень вкусная, с барбекю");
-        Dish dish3 = new Dish(25.1, "Салат Греческий", "Салат с оливковым маслом и овощами");
+        Dish dish1 = new Dish("Cool-cola", "Лучшая кола", 20.0);
+        Dish dish2 = new Dish("Макароны от мамы", "Макароны с сыром", 23.0);
+        Dish dish3 = new Dish("Салат Греческий", "Салат с оливковым маслом и овощами", 25.0);
 
         OrderManager orderManager = new OrderManager(10);
         Order order1 = new Order();
